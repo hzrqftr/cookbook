@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fdfdfd">
+  <title>The Cookbook — Recipes worth repeating</title>
+  <meta name="description" content="A small, growing collection of tried-and-tested recipes. English &amp; Bahasa Melayu.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <span class="dot"></span>
+        <span data-lang-en>The Cookbook</span>
+        <span data-lang-ms>Buku Resipi</span>
+      </a>
+      <div class="header-right">
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button data-lang="en" class="active">EN</button>
+          <button data-lang="ms">MS</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section class="hero">
+      <p class="eyebrow">
+        <span data-lang-en>A growing collection</span>
+        <span data-lang-ms>Koleksi yang sentiasa bertambah</span>
+      </p>
+      <h1>
+        <span data-lang-en>Recipes worth<br>repeating.</span>
+        <span data-lang-ms>Resipi yang<br>berbaloi diulang.</span>
+      </h1>
+      <p>
+        <span data-lang-en>Tested, scaled, and written for real kitchens — from quick weeknight cooking to high-volume event production. Every recipe in English and Bahasa Melayu.</span>
+        <span data-lang-ms>Diuji, diskala, dan ditulis untuk dapur sebenar — daripada masakan harian pantas hingga pengeluaran majlis berskala besar. Setiap resipi dalam Bahasa Inggeris dan Bahasa Melayu.</span>
+      </p>
+    </section>
+
+    <div class="grid-head">
+      <h2>
+        <span data-lang-en>All recipes</span>
+        <span data-lang-ms>Semua resipi</span>
+      </h2>
+      <span class="count">
+        <span data-lang-en>1 recipe</span>
+        <span data-lang-ms>1 resipi</span>
+      </span>
+    </div>
+
+    <section class="recipe-grid">
+
+      <!-- Recipe 1 -->
+      <a class="card" href="recipes/mini-sliders.html">
+        <div class="card-thumb">
+          <span class="emoji">🍔</span>
+          <span class="card-tag">
+            <span data-lang-en>Event / Batch</span>
+            <span data-lang-ms>Majlis / Pukal</span>
+          </span>
+        </div>
+        <div class="card-body">
+          <h3>
+            <span data-lang-en>The Ultimate Mini Sliders</span>
+            <span data-lang-ms>Mini Slider Terbaik</span>
+          </h3>
+          <p>
+            <span data-lang-en>High-volume, low-cost sliders. One 400g pack makes exactly 12.</span>
+            <span data-lang-ms>Slider berskala besar, kos rendah. Satu pek 400g menghasilkan tepat 12.</span>
+          </p>
+          <div class="card-meta">
+            <span>🍽️ <span data-lang-en>12 servings</span><span data-lang-ms>12 hidangan</span></span>
+            <span>⏱️ <span data-lang-en>+ overnight</span><span data-lang-ms>+ semalaman</span></span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Placeholder so the grid never looks empty as you grow -->
+      <div class="card placeholder">
+        <div>
+          <div style="font-size:2rem; margin-bottom:8px;">＋</div>
+          <span data-lang-en>More recipes<br>coming soon</span>
+          <span data-lang-ms>Lebih banyak resipi<br>akan datang</span>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© <span id="year"></span> The Cookbook</span>
+      <span>
+        <span data-lang-en>Built with GitHub Pages</span>
+        <span data-lang-ms>Dibina dengan GitHub Pages</span>
+      </span>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
