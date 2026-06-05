@@ -278,9 +278,11 @@ body::before {
 .site-footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
 
 /* utility for language swapping */
-[data-lang-ms] { display: none; }
-body.lang-ms [data-lang-en] { display: none; }
-body.lang-ms [data-lang-ms] { display: revert; }
+/* default (English): hide all Malay spans */
+[data-lang-ms] { display: none !important; }
+/* Malay mode: hide English, show Malay */
+body.lang-ms [data-lang-en] { display: none !important; }
+body.lang-ms [data-lang-ms] { display: revert !important; }
 
 @media (max-width: 600px) {
   .hero { padding: 44px 0 28px; }
